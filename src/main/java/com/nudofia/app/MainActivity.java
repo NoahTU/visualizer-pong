@@ -4,7 +4,7 @@
  * Licensed under the MIT license:
  * http://creativecommons.org/licenses/MIT/"
  *
- *
+ *v2
  */
 package com.nudofia.app;
 
@@ -76,7 +76,9 @@ public class MainActivity extends Activity {
     mVisualizerView.link(mPlayer);
 
     // Start with just bar renderer
+    int test= 0;
     addBarGraphRenderers();
+    addCircleBarRenderer();
   }
 
   private void cleanUp()
