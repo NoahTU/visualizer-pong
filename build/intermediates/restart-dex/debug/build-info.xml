@@ -5,40 +5,33 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="145031547153699"
+    timestamp="146061974499470"
     token="-5070921001028592129"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="183" />
+        duration="661" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="9" />
+        duration="1470" />
     <task
         name="verifier"
-        duration="4" />
+        duration="108" />
 
     <artifact
-        location="C:\Users\Noah\Desktop\School\Software Design\Project\BACKUP\visualizer-pong\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
-        type="DEX" />
+        location="C:\Users\Noah\Desktop\School\Software Design\Project\BACKUP\visualizer-pong\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="144944905969033"
+        timestamp="146061974499470"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Noah\Desktop\School\Software Design\Project\BACKUP\visualizer-pong\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="145031547153699"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\Noah\Desktop\School\Software Design\Project\BACKUP\visualizer-pong\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
-            type="DEX" />
     </build>
 
 </instant-run>
