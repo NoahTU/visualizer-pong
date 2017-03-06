@@ -27,9 +27,7 @@ import com.nudofia.visualizer.renderer.CircleBarRenderer;
 import com.nudofia.visualizer.renderer.CircleRenderer;
 import com.nudofia.visualizer.renderer.LineRenderer;
 
-/**
- * Demo to show how to use VisualizerView
- */
+
 public class MainActivity extends Activity {
   private MediaPlayer mPlayer;
   private MediaPlayer mSilentPlayer;  /* to avoid tunnel player issue */
@@ -39,7 +37,7 @@ public class MainActivity extends Activity {
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.main);
+    setContentView(R.layout.mainmen);
   }
 
   @Override
@@ -66,19 +64,19 @@ public class MainActivity extends Activity {
 
   private void init()
   {
-    mPlayer = MediaPlayer.create(this, R.raw.test);
+    mPlayer = MediaPlayer.create(this, R.raw.mansion);
     mPlayer.setLooping(true);
     mPlayer.start();
 
     // We need to link the visualizer view to the media player so that
     // it displays something
-    mVisualizerView = (VisualizerView) findViewById(R.id.visualizerView);
+
+    /*mVisualizerView = (VisualizerView) findViewById(R.id.visualizerView);
     mVisualizerView.link(mPlayer);
 
     // Start with just bar renderer
-    int test= 0;
     addBarGraphRenderers();
-    addCircleBarRenderer();
+    addCircleBarRenderer();*/
   }
 
   private void cleanUp()
@@ -172,12 +170,20 @@ public class MainActivity extends Activity {
   // Actions for buttons defined in xml
   public void startPressed(View view) throws IllegalStateException, IOException
   {
-    if(mPlayer.isPlaying())
+      setContentView(R.layout.main);
+
+      mVisualizerView = (VisualizerView) findViewById(R.id.visualizerView);
+      mVisualizerView.link(mPlayer);
+
+      // Start with just bar renderer
+      addBarGraphRenderers();
+      addCircleBarRenderer();
+   /* if(mPlayer.isPlaying())
     {
       return;
     }
     mPlayer.prepare();
-    mPlayer.start();
+    mPlayer.start();*/
   }
 
   public void stopPressed(View view)
